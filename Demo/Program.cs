@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using Demo.CastingOperatorOverloading;
+
+namespace Demo
 {
     internal class Program
     {
@@ -26,6 +28,28 @@
 
             string S = (string)c1;
             Console.WriteLine(S);
+
+            #endregion
+
+            #region Casting Operators overloading - mapping
+            User user = new User()
+            {
+                FullName = "Mariam Shindy",
+                Email = "Mariam@gmail.com",
+                Password = "password",
+                SecuirtyStamp = Guid.NewGuid(),
+                Id = 10
+
+            };
+
+            Console.WriteLine(user.SecuirtyStamp);
+            UserViewModel userViewModel = (UserViewModel)user;
+            Console.WriteLine(userViewModel.FirstName);
+            Console.WriteLine(userViewModel.LastName);
+            Console.WriteLine(userViewModel.Email);
+
+            object obj2 = new UserViewModel();
+            userViewModel = (UserViewModel)obj;
 
             #endregion
         }
