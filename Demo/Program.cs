@@ -1,5 +1,6 @@
 ﻿using Demo.Abstraction;
 using Demo.CastingOperatorOverloading;
+using Demo.Partial;
 
 namespace Demo
 {
@@ -81,8 +82,16 @@ namespace Demo
             //Console.WriteLine(Utility.AreaCircle(10));
             #endregion
 
-
-
+            #region Partial
+            Employee employee = new Employee()
+            {
+                Name = "Mohab",
+                Age = 22,
+                Email = "MohabK044@gmail.com",
+                Id = 2122730
+            };
+            employee.Print();
+            #endregion
         }
     }
 }
