@@ -52,5 +52,15 @@ namespace Demo
 
         }
 
+        public static explicit operator int(Complex complex)
+        {
+            return complex?.Real ?? 0;
+        }
+
+        public static implicit operator string(Complex complex)
+        {
+            return complex?.ToString() ?? String.Empty;
+        }
+
     }
 }
