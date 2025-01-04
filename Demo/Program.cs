@@ -72,6 +72,16 @@ namespace Demo
             //Console.WriteLine(circle.Premiter);
             #endregion
 
+            #region Static
+            //Utility U1 = new Utility() { X = 10, Y = 20 };
+            //Utility U2 = new Utility() { X = 30, Y = 40 };
+            //Console.WriteLine(Utility.CmInch(20));   // Class Member Method {Static}
+            //Console.WriteLine(Utility.CmInch(20));  // Class Member Method {Static}
+            //Console.WriteLine(U1.AreaCircle(10));   // Object Member Method {Non Static}
+            //Console.WriteLine(Utility.AreaCircle(10));
+            #endregion
+
+
         }
     }
 }
